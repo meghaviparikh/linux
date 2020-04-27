@@ -257,7 +257,16 @@ sha1,rsa2048:dev+
 OK
 ```
 
-### Step 7: Put U-Boot and the kernel onto the board
+### Step 7: Put the public key in U-Boot's image:
+
+```
+# cd $UBOOT
+# make O=b/am335x_boneblack_vboot EXT_DTB=${WORK}/am335x-boneblack-pubkey.dtb
+
+```
+
+
+### Step 8: Put U-Boot and the kernel onto the board
 
 Now, you are ready to install U-BOOT and Kernel on the board so partition your sd card into 2 volumes. The first volume should contain a minimum of 50 MB. I used the Windows Disk Mgmt to Partition them to make things easy.
 
