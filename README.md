@@ -88,7 +88,7 @@ Now we have everything we need we need from U-BOOT, you can navigate to `b/am335
 ```
 
 
-If you don't have these, there is something wrong, and you should correctly follow the steps mentioned above before proceeding. If you have thoes, feel free to proceed ahead!
+If you don't have these, there is something wrong, and you should correctly follow the steps mentioned above before proceeding.
 
 ### Step 3: Compiling the linux Kernel
 
@@ -120,7 +120,7 @@ Navigate to `$OKERNEL` and make sure you have `Image` and `dts/am335x-boneblack.
 -rw-r--r-- 1 root root  60180 Apr 27 07:18 am335x-boneblack.dtb
 ```
 
-It's ok if you don't have the hiddenIf you have these, kindly proceed ahead. If you don't have these files, there is a chance that you might have done something wrong.
+If you have these, kindly proceed ahead. If you don't have these files, there is a chance that you might have done something wrong.
 
 ### Step 4: Preparing the Work Directory
 
