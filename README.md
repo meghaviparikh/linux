@@ -57,7 +57,7 @@ These are the basic dependencies that are needed, I may be forgetting something 
 2. Compile the U-BOOT for BBB
 
 ```  
-# make am335x_boneblack_vboot_config O=b/am335x_boneblack_vboot
+# make am335x_boneblack_vboot_config O=b/am335x_evm_defconfig
 # make all O=b/am335x_boneblack_vboot
 ```
 
@@ -305,7 +305,7 @@ source ~/.bashrc
 Now, Issue the following commands to write the images created onto the SDCARD.
 
 ```
-# sudo mount $UDEV /mnt/tmp && sudo cp $UOUT/u-boot-dtb.img /mnt/tmp/u-boot.img  && sleep 1 && sudo umount $UDEV
+# sudo mount $UDEV /mnt/tmp && sudo cp $UOUT/u-boot-dtb.img /mnt/tmp/u-boot.img  && sudo cp $UOUT/MLO /mnt/tmp/MLO && sleep 1 && sudo umount $UDEV
 # sudo mount $KDEV /mnt/tmp && sudo cp $WORK/image.fit /mnt/tmp/boot/image.fit && sleep 1 && sudo umount $KDEV
 ```
 
