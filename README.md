@@ -27,7 +27,7 @@ Issue  `nano ~/.bashrc` and copy the following Environmental variables in them. 
 export CROSS_COMPILE=arm-linux-gnueabi-
 export ARCH=arm
 export UBOOT=/root/u-boot
-export UOUT=$UBOOT/b/am335x_boneblack_vboot
+export UOUT=$UBOOT/b/am335x_evm_defconfig
 export KERNEL=/root/new_kernel
 export OKERNEL=$KERNEL/arch/arm/boot
 export WORK=/root/work
@@ -57,8 +57,8 @@ These are the basic dependencies that are needed, I may be forgetting something 
 2. Compile the U-BOOT for BBB
 
 ```  
-# make am335x_boneblack_vboot_config O=b/am335x_evm_defconfig
-# make all O=b/am335x_boneblack_vboot
+# make am335x_evm_defconfig O=b/am335x_evm_defconfig
+# make all O=b/am335x_evm_defconfig
 ```
 
 3. Compile the tools,
@@ -72,7 +72,7 @@ We will need the mkimage utility that comes with u-boot later to create a Kernel
 Now we have everything we need we need from U-BOOT, you can navigate to `b/am335x_boneblack_vboot/` to check if there is a `u-boot-dtb.img` file. Also navigate to `tools/` and confirm that there is an executable `mkimage`. 
 
 ```
-# cd b/am335x_boneblack_vboot/
+# cd b/am335x_evm_defconfig/
 # ls -l | grep "u-boot-dtb.img"
 -rw-r--r--  1 root root  499141 Apr 27 07:03 u-boot-dtb.img
 ```
